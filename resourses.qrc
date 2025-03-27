@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/dialog">
+        <file>images/waterglass-32.png</file>
+    </qresource>
+</RCC>
