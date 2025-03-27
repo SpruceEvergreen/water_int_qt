@@ -39,6 +39,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="6" column="1">
     <spacer name="horizontalSpacer_5">
@@ -345,6 +348,12 @@
          <pointsize>16</pointsize>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::FocusPolicy::NoFocus</enum>
        </property>
        <property name="styleSheet">
         <string notr="true">#doneBtn {

@@ -32,6 +32,7 @@ void timer_over() {
     timer_over_msg.setWindowTitle("Hey!");
     timer_over_msg.setText("The time is up!\n"
                            "You should probably drink a glass of water!");
+    timer_over_msg.setStyleSheet("QLabel{min-width:300px; min-height:80px; font-size: 14px;}");
     timer_over_msg.setWindowFlags(Qt::WindowStaysOnTopHint);
     timer_over_msg.exec();
 }
@@ -40,6 +41,7 @@ void empty_timer_warning() {
     QMessageBox empty_timer_msg;
     empty_timer_msg.setWindowTitle("Hey!");
     empty_timer_msg.setText("Time can't be 00:00:00!\n");
+    empty_timer_msg.setStyleSheet("QLabel{min-width:200px; min-height:70px; font-size: 14px;}");
     empty_timer_msg.exec();
 }
 
@@ -48,8 +50,10 @@ void check_glass_counter(int &counter) {
 
     enough_msg.setWindowTitle("Hey!");
     enough_msg.setText("That's probably enough of water!\n"
-                       "You should check with your doctor \nabout"
-                       " the right amount for you!");
+                       "You should check with your doctor about\n"
+                       "the right amount for you!");
+    enough_msg.setStyleSheet("QLabel{min-width:300px; min-height:80px; font-size: 14px;}");
+
     if (counter > 8 ) {
         enough_msg.exec();
     }
